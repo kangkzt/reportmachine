@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.921,E:\360云盘\delphi xe4 控件\ReportMachine7.0\source\reportmachine7.0 for xe4.groupproj=C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2014/06/24 09:18:37.936,E:\DPackge\Control\ReportMachine7.0\xe6\source\reportmachine7.groupproj=E:\DPackge\Control\ReportMachine7.0\xe6\source\reportmachine7.0 for xe4.groupproj</Transaction>
+    <Transaction>2014/06/24 09:18:52.858,E:\DPackge\Control\ReportMachine7.0\xe6\source\reportmachine7_xe6.groupproj=E:\DPackge\Control\ReportMachine7.0\xe6\source\reportmachine7.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="E:\DPackge\Control\ReportMachine7.0\xe6\source\rm_r_xe6.dproj"/>
+	</Default.Personality>
+</BorlandProject>

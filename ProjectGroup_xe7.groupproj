@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F173C9B8-30CB-4C34-A698-7A58BB13B399}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="rm_d_xe7.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="rm_r_xe7.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="rm_d_xe7">
+        <MSBuild Projects="rm_d_xe7.dproj"/>
+    </Target>
+    <Target Name="rm_d_xe7:Clean">
+        <MSBuild Projects="rm_d_xe7.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rm_d_xe7:Make">
+        <MSBuild Projects="rm_d_xe7.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="rm_r_xe7">
+        <MSBuild Projects="rm_r_xe7.dproj"/>
+    </Target>
+    <Target Name="rm_r_xe7:Clean">
+        <MSBuild Projects="rm_r_xe7.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rm_r_xe7:Make">
+        <MSBuild Projects="rm_r_xe7.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="rm_d_xe7;rm_r_xe7"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="rm_d_xe7:Clean;rm_r_xe7:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="rm_d_xe7:Make;rm_r_xe7:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
